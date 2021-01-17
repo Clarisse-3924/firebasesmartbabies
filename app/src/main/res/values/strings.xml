@@ -7,4 +7,6 @@
     <string name="facebook_app_id">257533312463275</string>
     <string name="fb_login_protocol_scheme">fb257533312463275</string>
     <string name="LoginFacebook">Login with FaceBook</string>
+    <string name="product_name">name</string>
+    <string name="product_description">description</string>
 </resources>
