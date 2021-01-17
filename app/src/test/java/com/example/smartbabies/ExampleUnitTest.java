@@ -1,4 +1,4 @@
-package com.example.firebasesmartbabies;
+package com.example.smartbabies;
 
 import org.junit.Test;
 

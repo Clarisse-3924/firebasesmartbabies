@@ -1,4 +1,4 @@
-package com.example.firebasesmartbabies;
+package com.example.smartbabies;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.firebasesmartbabies", appContext.getPackageName());
+        assertEquals("com.example.smartbabies", appContext.getPackageName());
     }
 }
