@@ -82,7 +82,7 @@ ListView list_item;
     }
     public void ClickAdmin(View view){
         //redirect to dashborad
-        //MainActivity.redirectActivity(this,AdminLogin.class);
+        MainActivity.redirectActivity(this,adminlogin.class);
     }
 
 

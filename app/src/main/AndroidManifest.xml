@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ordering"></activity>
-        <activity android:name="com.example.firebasesmartbabies.selling2" />
+        <activity android:name=".selling2" />
         <activity android:name=".selling" />
-        <activity android:name="com.example.firebasesmartbabies.Admin" />
-        <activity android:name="com.example.firebasesmartbabies.adminlogin" />
+        <activity android:name=".Admin" />
+        <activity android:name=".adminlogin" />
         <activity android:name=".contact" />
         <activity android:name=".facebooklogin" />
 

@@ -52,13 +52,12 @@
                 android:background="@drawable/baby"
                 tools:context=".MainActivity">
 
-                <ListView
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/list_item">
+                    android:id="@+id/myrecycleview1">
 
-
-                </ListView>
+                </androidx.recyclerview.widget.RecyclerView>
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
