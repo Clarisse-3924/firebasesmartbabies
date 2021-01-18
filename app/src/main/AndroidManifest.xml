@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.firebasesmartbabies.selling2"></activity>
+        <activity android:name=".ordering"></activity>
+        <activity android:name="com.example.firebasesmartbabies.selling2" />
         <activity android:name=".selling" />
         <activity android:name="com.example.firebasesmartbabies.Admin" />
         <activity android:name="com.example.firebasesmartbabies.adminlogin" />
