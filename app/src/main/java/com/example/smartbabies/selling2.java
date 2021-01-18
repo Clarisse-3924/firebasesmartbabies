@@ -1,4 +1,4 @@
-package com.example.firebasesmartbabies;
+package com.example.smartbabies;
 
 import androidx.appcompat.app.AppCompatActivity;
 
