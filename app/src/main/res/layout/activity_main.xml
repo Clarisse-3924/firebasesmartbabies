@@ -58,11 +58,7 @@
                     android:id="@+id/myrecycleview1">
 
                 </androidx.recyclerview.widget.RecyclerView>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="store"
-    android:id="@+id/store"/>
+
 
 
             </RelativeLayout>
