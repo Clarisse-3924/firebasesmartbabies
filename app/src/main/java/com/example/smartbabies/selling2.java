@@ -1,15 +1,12 @@
 package com.example.smartbabies;
 
         import android.content.Intent;
-        import android.content.pm.PackageManager;
-        import android.net.Uri;
+
         import android.os.Bundle;
 
         import android.widget.Toast;
 
         import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.app.ActivityCompat;
-        import androidx.core.content.ContextCompat;
         import androidx.recyclerview.widget.LinearLayoutManager;
         import androidx.recyclerview.widget.RecyclerView;
 
