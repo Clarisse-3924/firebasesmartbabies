@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private TextView Name;
+    private Button store;
     DrawerLayout drawerLayout;
 List<listview>list;
 ListView list_item;
@@ -26,6 +28,14 @@ ListView list_item;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Name = (TextView) findViewById(R.id.name);
+        store=findViewById(R.id.store);
+
+        store.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), selling2.class));
+            }
+        });
         drawerLayout = findViewById(R.id.drawer_layout);
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
