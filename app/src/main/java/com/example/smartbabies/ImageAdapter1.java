@@ -14,6 +14,7 @@ package com.example.smartbabies;
         import com.bumptech.glide.Glide;
 
 
+        import java.util.ArrayList;
         import java.util.List;
 
 public class ImageAdapter1 extends RecyclerView.Adapter<ImageAdapter1.ImageViewHolder> {
@@ -47,6 +48,11 @@ public class ImageAdapter1 extends RecyclerView.Adapter<ImageAdapter1.ImageViewH
     @Override
     public int getItemCount() {
         return muploads.size();
+    }
+
+    public void filterList(ArrayList<upload> filteredlist) {
+        muploads = filteredlist;
+        notifyDataSetChanged();
     }
 
     public class ImageViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,

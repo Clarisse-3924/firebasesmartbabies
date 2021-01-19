@@ -11,8 +11,12 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +34,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements ImageAdapter1.onItemclickListener{
     private TextView Name;
     DrawerLayout drawerLayout;
+    private EditText search;
 
     private RecyclerView mRecyclerView;
     private ImageAdapter1 mAdapter;
@@ -46,6 +51,26 @@ public class MainActivity extends AppCompatActivity implements ImageAdapter1.onI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Name = (TextView) findViewById(R.id.name);
+
+        search=findViewById(R.id.search);
+        search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+
+            }
+        });
+
 
         mRecyclerView=findViewById(R.id.myrecycleview1);
         mRecyclerView.setHasFixedSize(true);
@@ -98,6 +123,19 @@ public class MainActivity extends AppCompatActivity implements ImageAdapter1.onI
 //        mylistadapter adapter= new mylistadapter(this,R.layout.store,list);
 //        list_item.setAdapter(adapter);
     }
+
+   private  void filter(String text){
+        ArrayList<upload>filteredlist= new ArrayList<>();
+        for(upload item: muploads){
+            if(item.getPname().toLowerCase().contains(text.toLowerCase())){
+                filteredlist.add(item);
+            }
+        }
+        mAdapter.filterList(filteredlist);
+   }
+
+
+
 
     @Override
     public void onItemClick(int position) {
@@ -217,4 +255,5 @@ public class MainActivity extends AppCompatActivity implements ImageAdapter1.onI
         //close drawer
         closeDrawer(drawerLayout);
     }
+
 }
